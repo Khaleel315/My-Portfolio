@@ -687,6 +687,132 @@
         padding: 0.9rem 2rem;
         font-size: 1rem;
       }
+	  
+	  /* Responsive improvements */
+
+/* Smaller desktops and large tablets */
+@media screen and (max-width: 1080px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+  nav .brand {
+    font-size: 1.6rem;
+  }
+}
+
+/* Tablets and medium screens */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px; /* Slightly smaller base font */
+  }
+  .projects-grid,
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  nav ul {
+    gap: 1.7rem;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  section {
+    padding: 5rem 1.5rem 3rem;
+  }
+  .container {
+    width: 95%;
+  }
+}
+
+/* Small tablets and large phones */
+@media screen and (max-width: 500px) {
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  nav {
+    flex-wrap: wrap;
+    padding: 0.8rem 1rem;
+  }
+  nav .brand {
+    font-size: 1.35rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.4rem;
+  }
+  section {
+    padding: 4rem 1rem 3rem;
+  }
+  #home .main-card {
+    margin: 0 0.5rem;
+    max-width: 100%;
+    padding: 3rem 1.5rem 2rem;
+  }
+  .hero-contact-btn {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+  .profile-circle {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 1rem;
+  }
+  .hero-img-container img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Extra small phones */
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 14px;
+  }
+  nav ul {
+    gap: 0.8rem;
+  }
+  .skill-card h3 {
+    font-size: 1.15rem;
+  }
+  .skill-card p {
+    font-size: 0.85rem;
+  }
+  .project-info h3 {
+    font-size: 1.1rem;
+  }
+  .project-info p {
+    font-size: 0.85rem;
+  }
+  .project-links a {
+    font-size: 0.9rem;
+    padding: 0.35rem 0.9rem;
+  }
+}
+
+/* Make nav clickable area bigger on small screens */
+nav ul li a {
+  padding: 0.5rem 0.3rem;
+  display: inline-block;
+}
+
+/* Ensure no content overlaps or cuts off */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Allow nav menu to wrap smoothly on very small devices */
+nav ul {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Enhance touch targets */
+.theme-toggle {
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+}
+
     }
   </style>
 </head>
